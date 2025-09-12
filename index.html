@@ -1,27 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>XOps Microchallenge #6</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f3f4f6;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #2563eb;
-        }
-        p {
-            color: #374151;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>XOps Microchallenge #6</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa);
+      color: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: #ffffff;
+      color: #111827;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #2563eb;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    p {
+      font-size: 1.2em;
+      color: #374151;
+      margin: 10px 0;
+    }
+    strong {
+      color: #16a34a;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #6b7280;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #2563eb;
+      color: white;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #1e40af;
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(30, 64, 175, 0.5);
+    }
+  </style>
 </head>
 <body>
-    <h1>XOps Microchallenge #6</h1>
+  <div class="card">
+    <h1>🚀 XOps Microchallenge #6</h1>
     <p>App deployed with <strong>GitHub Actions + Kubernetes + Argo CD</strong></p>
-    <p> Hello from your cluster </p>
+    <p>✨ Hello from your Kubernetes cluster ✨</p>
+    <a href="#" class="btn">Learn More</a>
+    <div class="footer">Powered by DevOps • 2025</div>
+  </div>
 </body>
 </html>
 
